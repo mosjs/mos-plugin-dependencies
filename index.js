@@ -9,7 +9,7 @@ function plugin (markdown) {
     dependencies: opts => {
       opts = opts || {}
 
-      return `## Dependencies${maybeShield('deps', opts.shield)}\n\n${
+      return `## <a name="dependencies">Dependencies</a>${maybeShield('deps', opts.shield)}\n\n${
         renderDeps({
           deps: markdown.pkg.dependencies,
           pkgRoot: markdown.pkgRoot,
@@ -19,7 +19,7 @@ function plugin (markdown) {
     devDependencies: opts => {
       opts = opts || {}
 
-      return `## Dev Dependencies${maybeShield('devDeps', opts.shield)}\n\n${
+      return `## <a name="dev-dependencies">Dev Dependencies</a>${maybeShield('devDeps', opts.shield)}\n\n${
         renderDeps({
           deps: markdown.pkg.devDependencies,
           pkgRoot: markdown.pkgRoot,
