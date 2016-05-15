@@ -8,8 +8,8 @@
 
 <!--@shields.flatSquare('npm', 'travis', 'coveralls')-->
 [![NPM version](https://img.shields.io/npm/v/mos-plugin-dependencies.svg?style=flat-square)](https://www.npmjs.com/package/mos-plugin-dependencies)
-[![Build status for master](https://img.shields.io/travis/zkochan/mos-plugin-dependencies/master.svg?style=flat-square)](https://travis-ci.org/zkochan/mos-plugin-dependencies)
-[![Test coverage for master](https://img.shields.io/coveralls/zkochan/mos-plugin-dependencies/master.svg?style=flat-square)](https://coveralls.io/r/zkochan/mos-plugin-dependencies?branch=master)
+[![Build status for master](https://img.shields.io/travis/mosjs/mos-plugin-dependencies/master.svg?style=flat-square)](https://travis-ci.org/mosjs/mos-plugin-dependencies)
+[![Test coverage for master](https://img.shields.io/coveralls/mosjs/mos-plugin-dependencies/master.svg?style=flat-square)](https://coveralls.io/r/mosjs/mos-plugin-dependencies?branch=master)
 <!--/@-->
 
 <!--@installation()-->
@@ -59,7 +59,7 @@ You'll get a dependencies section with the list of the dependencies used in the 
 * * *
 
 <!--@dependencies({ shield: 'flat-square' })-->
-## Dependencies [![Dependency status for master](https://img.shields.io/david/zkochan/mos-plugin-dependencies/master.svg?style=flat-square)](https://david-dm.org/zkochan/mos-plugin-dependencies/master)
+## Dependencies [![Dependency status for master](https://img.shields.io/david/mosjs/mos-plugin-dependencies/master.svg?style=flat-square)](https://david-dm.org/mosjs/mos-plugin-dependencies/master)
 
 - [github-url-to-object](https://github.com/zeke/github-url-to-object): Extract user, repo, and other interesting properties from GitHub URLs
 - [shields](https://github.com/kenany/shields): Generate shields for your current project's README
@@ -67,7 +67,7 @@ You'll get a dependencies section with the list of the dependencies used in the 
 <!--/@-->
 
 <!--@devDependencies({ shield: 'flat-square' })-->
-## Dev Dependencies [![devDependency status for master](https://img.shields.io/david/dev/zkochan/mos-plugin-dependencies/master.svg?style=flat-square)](https://david-dm.org/zkochan/mos-plugin-dependencies/master#info=devDependencies)
+## Dev Dependencies [![devDependency status for master](https://img.shields.io/david/dev/mosjs/mos-plugin-dependencies/master.svg?style=flat-square)](https://david-dm.org/mosjs/mos-plugin-dependencies/master#info=devDependencies)
 
 - [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog): Commitizen adapter following the conventional-changelog format.
