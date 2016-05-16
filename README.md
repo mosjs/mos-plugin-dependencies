@@ -62,7 +62,7 @@ You'll get a dependencies section with the list of the dependencies used in the 
 ## Dependencies [![Dependency status for master](https://img.shields.io/david/mosjs/mos-plugin-dependencies/master.svg?style=flat-square)](https://david-dm.org/mosjs/mos-plugin-dependencies/master)
 
 - [github-url-to-object](https://github.com/zeke/github-url-to-object): Extract user, repo, and other interesting properties from GitHub URLs
-- [shields](https://github.com/kenany/shields): Generate shields for your current project's README
+- [shieldman](https://github.com/zkochan/shieldman): Badges creator
 
 <!--/@-->
 

@@ -39,7 +39,7 @@
   "homepage": "https://github.com/mosjs/mos-plugin-dependencies#readme",
   "dependencies": {
     "github-url-to-object": "^2.2.1",
-    "shields": "^2.1.0"
+    "shieldman": "^1.0.1"
   },
   "devDependencies": {
     "chai": "^3.4.1",
