@@ -1,31 +1,27 @@
-'use strict'
-module.exports = plugin
-
-const renderDeps = require('./render-deps')
+import renderDeps from './render-deps'
 const shield = require('shieldman')
 
-function plugin (markdown) {
-  return {
-    dependencies: opts => {
-      opts = opts || {}
+export default function plugin (mos, markdown) {
+  mos.scope.dependencies = opts => {
+    opts = opts || {}
 
-      return `## <a name="dependencies">Dependencies</a>${maybeShield('deps', opts.shield)}\n\n${
-        renderDeps({
-          deps: markdown.pkg.dependencies,
-          pkgRoot: markdown.pkgRoot,
-        })
-      }\n`
-    },
-    devDependencies: opts => {
-      opts = opts || {}
+    return `## <a name="dependencies">Dependencies</a>${maybeShield('deps', opts.shield)}\n\n${
+      renderDeps({
+        deps: markdown.pkg.dependencies,
+        pkgRoot: markdown.pkgRoot,
+      })
+    }\n`
+  }
 
-      return `## <a name="dev-dependencies">Dev Dependencies</a>${maybeShield('devDeps', opts.shield)}\n\n${
-        renderDeps({
-          deps: markdown.pkg.devDependencies,
-          pkgRoot: markdown.pkgRoot,
-        })
-      }\n`
-    },
+  mos.scope.devDependencies = opts => {
+    opts = opts || {}
+
+    return `## <a name="dev-dependencies">Dev Dependencies</a>${maybeShield('devDeps', opts.shield)}\n\n${
+      renderDeps({
+        deps: markdown.pkg.devDependencies,
+        pkgRoot: markdown.pkgRoot,
+      })
+    }\n`
   }
 
   function maybeShield (shieldName, style) {
@@ -45,6 +41,10 @@ function plugin (markdown) {
 
     return ` ${renderShield(shieldProps)}`
   }
+}
+
+plugin.attributes = {
+  pkg: require('../package.json'),
 }
 
 function testRepo (repo) {

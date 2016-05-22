@@ -1,1 +1,1 @@
-{lib/**/*.spec.js,index.spec.js}
+src/**/*.spec.js

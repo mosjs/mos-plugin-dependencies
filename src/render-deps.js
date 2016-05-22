@@ -1,9 +1,6 @@
-'use strict'
-module.exports = renderDeps
+import getDeps from './get-deps'
 
-const getDeps = require('./get-deps')
-
-function renderDeps (opts) {
+export default function renderDeps (opts) {
   const depDetails = getDeps(opts)
 
   if (!depDetails.length) return 'None'
